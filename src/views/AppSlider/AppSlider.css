@@ -1,0 +1,50 @@
+.clips {
+  --clips-on-page: 4;
+  width: calc(var(--amount-clips) * 100% / var(--clips-on-page));
+  display: flex;
+  align-items: center;
+  transform: translate(
+    calc(
+      var(--tweakX, 0px) + var(--clips-page) * var(--clips-on-page) *
+        (100vw / var(--clips-on-page)) * -1
+    )
+  );
+  margin: 40px 0;
+  cursor: grab;
+}
+
+.smooth {
+  transition: transform calc(var(--f, 1) * 0.5s) ease-out;
+}
+
+.list-item {
+  width: calc(100vw / var(--clips-on-page));
+  padding: 0px 3vw;
+  list-style: none;
+  transition: transform 0.05s;
+}
+
+.list-item:hover {
+  transform: scale(1.07);
+}
+
+@media (max-width: 1450px) {
+  .clips {
+    --clips-on-page: 3;
+  }
+}
+
+@media (max-width: 1070px) {
+  .clips {
+    --clips-on-page: 2;
+  }
+}
+
+@media (max-width: 650px) {
+  .clips {
+    --clips-on-page: 1;
+  }
+  .list-item {
+    padding: 0px 10vw;
+  }
+}

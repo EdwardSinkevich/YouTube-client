@@ -1,0 +1,21 @@
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.control-button {
+  display: none;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.current-page {
+  border: 2px solid;
+  color: #ffffff;
+  background: red;
+  user-select: none;
+}

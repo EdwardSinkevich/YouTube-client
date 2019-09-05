@@ -1,0 +1,84 @@
+.clip {
+  max-height: 72vh;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.clip-title {
+  position: relative;
+}
+
+.clip-info {
+  height: 280px;
+}
+
+.clip-img {
+  width: 100%;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.title {
+  width: 100%;
+  padding: 5px 10px;
+  position: absolute;
+  top: 33%;
+  left: 0;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 22px;
+  color: #ffffff;
+  background: #106544;
+}
+
+.info-snippet {
+  padding: 0px 30px 10px 50px;
+}
+
+.info-inner {
+  min-width: 200px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.info-inner::before {
+  font-family: "FontAwesome";
+  font-size: 2rem;
+  float: left;
+  color: #6f6c6d;
+  width: 40px;
+}
+
+.info-channel::before {
+  content: "\F007";
+}
+
+.info-date::before {
+  content: "\F073";
+}
+
+.info-views::before {
+  content: "\F06E";
+}
+
+.info-description {
+  word-break: break-word;
+  padding: 0 10px;
+  font-style: italic;
+}
+
+.tooltip {
+  position: relative;
+  bottom: 30px;
+  font-size: 21px;
+  color: #ffffff;
+  display: none;
+}
+
+.tooltip-visible {
+  display: inline;
+}
